@@ -38,7 +38,7 @@ def load_image(name, colorkey=None):
     return image
 
 class Particle(pygame.sprite.Sprite):
-    # сгенерируем частицы разного размера
+    #сгенерируем частицы разного размера
     fire = [load_image("particle.png")]
     for scale in (5, 10, 20):
         fire.append(pygame.transform.scale(fire[0], (scale, scale)))
